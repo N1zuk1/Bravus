@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="components/css/IMC.css">
+    <title>Bravus Workout</title>
+</head>
+<body>
+     <!-- COMEÇO NAV-->
+     <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>BRVS</h1>
+            </div>
+        
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Calculador IMC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="components/imagens/menu.png"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Calculador IMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!-- FINAL NAV-->
+
+    <!-- Main -->
+
+    <main>
+        <div class="main-text">
+            <h1>Calculadora<br><b>IMC</b></h1>
+            <p>Calcule seu IMC</p>
+            <label class="label1" for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01">
+            <br>
+            <label class="label1" for="weight">Peso (kg):</label>
+            <input type="number" id="weight" step="0.01">
+            <br>
+            <button class="calculate-button" onclick="calculateIMC()">Calcular</button>
+            <p>Seu IMC é: <span id="result"></span></p>
+            <p class="classification-text"></p>
+        </div>
+        <div class="main-imagem">
+            <img src="components/imagens/Bravus.jpg">
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1>Redes Sociais</h1>
+                <p>Nos siga para mais conteúdos</p>
+
+                <div class="midia-social">
+                    <a href="#" class="footer-link" id="instagram"><img src="components/imagens/instagram.png" alt="" srcset=""></a>
+                    <a href="#" class="footer-link" id="whatsapp"><img src="components/imagens/whatsapp.png" alt="" srcset=""></a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fotos & Videos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Suplementos</a>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Junte-se a nós</h3>
+                <p>Marque uma aula experimental</p>
+                <div class="input-group">
+                    <input type="email" id="email">
+                    <button><img src="components/imagens/baseline_email_black_24dp.png"></button>
+                </div>
+            </div>    
+        </div>
+
+        <div id="footer-copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    <script src="components/scripts/IMC.js"></script>
+</body>
+</html>
