@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/css/style.css">
+    <link rel="stylesheet" href="components/css/IMC.css">
     <title>Bravus Workout</title>
 </head>
 <body>
-    <!-- COMEÇO NAV-->
-    <header>
+     <!-- COMEÇO NAV-->
+     <header>
         <nav class="nav-bar">
             <div class="logo">
                 <h1>BRVS</h1>
@@ -49,13 +49,21 @@
     </header>
     <!-- FINAL NAV-->
 
-
     <!-- Main -->
 
     <main>
         <div class="main-text">
-            <h1>Bravus Workout <br><b>Stronger than excuses</b></h1>
-            <p>"Prepare-se para uma experiência de malhação como nunca antes! Você está convidado a se juntar a nós na Bravus Workout, onde a diversão encontra o fitness. Não apenas você vai suar e se superar, mas também se juntará a uma comunidade incrível de entusiastas de condicionamento físico. Não perca esta oportunidade de transformar sua saúde e sua vida. Venha ser Bravus!"</p>
+            <h1>Calculadora<br><b>IMC</b></h1>
+            <p>Calcule seu IMC</p>
+            <label class="label1" for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01">
+            <br>
+            <label class="label1" for="weight">Peso (kg):</label>
+            <input type="number" id="weight" step="0.01">
+            <br>
+            <button class="calculate-button" onclick="calculateIMC()">Calcular</button>
+            <p>Seu IMC é: <span id="result"></span></p>
+            <p class="classification-text"></p>
         </div>
         <div class="main-imagem">
             <img src="components/imagens/Bravus.jpg">
@@ -108,8 +116,6 @@
             2023 all rights reserved
         </div>
     </footer>
-
-
-    <script src="/components/scripts/script.js"></script>
+    <script src="components/scripts/IMC.js"></script>
 </body>
 </html>

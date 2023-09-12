@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/css/style.css">
+    <link rel="stylesheet" href="./components/css/Contato.css">
     <title>Bravus Workout</title>
 </head>
 <body>
@@ -16,11 +16,11 @@
         
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Serviços.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/IMC.html">Calculador IMC</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Calculador IMC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                 </ul>
             </div>
 
@@ -35,11 +35,11 @@
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Serviços.html">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Calculador IMC</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/IMC.html">Calculador IMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
             </ul>
 
             <div class="login-button">
@@ -49,16 +49,34 @@
     </header>
     <!-- FINAL NAV-->
 
-
-    <!-- Main -->
-
+    <!-- MAIN -->
     <main>
         <div class="main-text">
-            <h1>Bravus Workout <br><b>Stronger than excuses</b></h1>
-            <p>"Prepare-se para uma experiência de malhação como nunca antes! Você está convidado a se juntar a nós na Bravus Workout, onde a diversão encontra o fitness. Não apenas você vai suar e se superar, mas também se juntará a uma comunidade incrível de entusiastas de condicionamento físico. Não perca esta oportunidade de transformar sua saúde e sua vida. Venha ser Bravus!"</p>
+            <h1>Entre em contato</h1>
+            <p>Envie-nos suas dúvidas e comentários</p>
+            <div class="content">
+                <form method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
         <div class="main-imagem">
             <img src="components/imagens/Bravus.jpg">
+        </div>
+        <div class="main-text">
+            <h2>Informações de Contato</h2>
+            <p>Endereço: Estamos localizados no Boulevard da Igreja Matriz.
+            <br>Travessa Arcebispo Dom José Marcondes Homem de Mello, n.°58.</p>
+            <p>Telefone: (12) 99184-0404</p>
         </div>
     </main>
 
@@ -108,8 +126,5 @@
             2023 all rights reserved
         </div>
     </footer>
-
-
-    <script src="/components/scripts/script.js"></script>
 </body>
 </html>
